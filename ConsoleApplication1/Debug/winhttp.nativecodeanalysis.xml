@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>winhttp.cpp</FILENAME>
+      <LINE>195</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6340</DEFECTCODE>
+    <DESCRIPTION>簽署時不符: 傳遞 'unsigned long' 做為 _Param_(2)，但需要的是部分 signed 類型 (呼叫 'printf' 時)。</DESCRIPTION>
+    <FUNCTION>WinHttp::sendRequest</FUNCTION>
+    <DECORATED>?sendRequest@WinHttp@@QAE_NXZ</DECORATED>
+    <FUNCLINE>133</FUNCLINE>
+    <PATH />
+  </DEFECT>
+</DEFECTS>

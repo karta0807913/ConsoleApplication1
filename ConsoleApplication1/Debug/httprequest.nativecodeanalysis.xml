@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>httprequest.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>'index' 的區域宣告會隱藏外部範圍中相同名稱的宣告。如需詳細資訊，請參閱先前位於第 '104' 行 ('c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\httprequest.cpp' 中) 的宣告。</DESCRIPTION>
+    <FUNCTION>HttpRequest::scand</FUNCTION>
+    <DECORATED>?scand@HttpRequest@@QAEHXZ</DECORATED>
+    <FUNCLINE>83</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>104</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>httprequest.cpp</FILENAME>
+      <LINE>108</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>從 'buffer' 讀取無效的資料:    可讀取的大小只有 'recv()`106' 個位元組，但可能會讀取多達 '2' 個位元組。</DESCRIPTION>
+    <FUNCTION>HttpRequest::scand</FUNCTION>
+    <DECORATED>?scand@HttpRequest@@QAEHXZ</DECORATED>
+    <FUNCLINE>83</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 'url==0' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>88</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>89</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 '&lt;分支條件&gt;' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>92</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>93</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 'webSocket==(SOCKET)(~0)' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>96</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>96</LINE>
+        <COLUMN>41</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'i!=0')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>97</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>98</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>99</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 'errcode!=0' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>101</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>102</LINE>
+        <COLUMN>34</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 '&lt;分支條件&gt;' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>104</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>105</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>106</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'buffer' 是 'recv' 的輸出 (已在 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h:2021 宣告)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>106</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 '&lt;分支條件&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>107</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>108</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>108</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此迴圈 (假設 'buffer[index]&gt;0' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>109</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>108</LINE>
+        <COLUMN>42</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'index' 可能等於 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>108</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>11</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'buffer[index]&gt;0')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>108</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>12</ID>
+          <KIND>用法</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>無法從 'buffer' 讀取 (超出可讀取的範圍)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>httprequest.cpp</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>'index' 的區域宣告會隱藏外部範圍中相同名稱的宣告。如需詳細資訊，請參閱先前位於第 '141' 行 ('c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\httprequest.cpp' 中) 的宣告。</DESCRIPTION>
+    <FUNCTION>HttpRequest::scandAndSaveToTxt</FUNCTION>
+    <DECORATED>?scandAndSaveToTxt@HttpRequest@@QAEHXZ</DECORATED>
+    <FUNCLINE>118</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>141</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>httprequest.cpp</FILENAME>
+      <LINE>146</LINE>
+      <COLUMN>37</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>從 'buffer' 讀取無效的資料:    可讀取的大小只有 'bufferSize*1' 個位元組，但可能會讀取多達 '2' 個位元組。</DESCRIPTION>
+    <FUNCTION>HttpRequest::scandAndSaveToTxt</FUNCTION>
+    <DECORATED>?scandAndSaveToTxt@HttpRequest@@QAEHXZ</DECORATED>
+    <FUNCLINE>118</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>120</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>121</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>121</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>122</LINE>
+        <COLUMN>9</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 'url==0' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>125</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>126</LINE>
+        <COLUMN>24</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 '&lt;分支條件&gt;' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>129</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>130</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 'webSocket==(SOCKET)(~0)' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>133</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>133</LINE>
+        <COLUMN>41</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'i!=0')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>134</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>135</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>136</LINE>
+        <COLUMN>14</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 'errcode!=0' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>138</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>139</LINE>
+        <COLUMN>34</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此分支 (假設 '&lt;分支條件&gt;' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>141</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>142</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'buffer' 是 'recv' 的輸出 (已在 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h:2021 宣告)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 '&lt;分支條件&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>145</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>145</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'buffer' 是 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::{ctor}' 的輸出 (已在 c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring:822 宣告)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>略過此迴圈 (假設 'buffer[index]&gt;0' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>147</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>42</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>11</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'buffer[index]&gt;0')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>12</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'buffer' 是 'recv' 的輸出 (已在 c:\program files (x86)\windows kits\8.1\include\um\winsock2.h:2021 宣告)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>143</LINE>
+        <COLUMN>48</COLUMN>
+        <KEYEVENT>
+          <ID>13</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>繼續此迴圈 (假設 '&lt;分支條件&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>144</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>145</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>145</LINE>
+        <COLUMN>16</COLUMN>
+        <KEYEVENT>
+          <ID>14</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'buffer' 是 'std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt;::{ctor}' 的輸出 (已在 c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring:822 宣告)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>15</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>離開此迴圈 ('buffer[index]&gt;0' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>147</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>42</COLUMN>
+        <KEYEVENT>
+          <ID>16</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'index' 可能等於 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>17</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'buffer[index]&gt;0')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>httprequest.cpp</FILENAME>
+        <LINE>146</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>18</ID>
+          <KIND>用法</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>無法從 'buffer' 讀取 (超出可讀取的範圍)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>

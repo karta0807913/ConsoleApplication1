@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>filemanager.cpp</FILENAME>
+      <LINE>75</LINE>
+      <COLUMN>13</COLUMN>
+    </SFA>
+    <DEFECTCODE>6246</DEFECTCODE>
+    <DESCRIPTION>'i' 的區域宣告會隱藏外部範圍中相同名稱的宣告。如需詳細資訊，請參閱先前位於第 '65' 行 ('c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\filemanager.cpp' 中) 的宣告。</DESCRIPTION>
+    <FUNCTION>FileManager::getInt</FUNCTION>
+    <DECORATED>?getInt@FileManager@@QAEPAHH@Z</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>filemanager.cpp</FILENAME>
+      <LINE>72</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>寫入 'num' 時發生緩衝區滿溢:    可寫入的大小只有 'numOfArray*4' 個位元組，但可能被寫入了 '8' 個位元組。</DESCRIPTION>
+    <FUNCTION>FileManager::getInt</FUNCTION>
+    <DECORATED>?getInt@FileManager@@QAEPAHH@Z</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>60</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>62</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'num' 是 1 元素的陣列 (4 個位元組)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>63</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>64</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'i&lt;fileLines')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'o&lt;100')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此分支 (假設 '&lt;分支條件&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>81</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'num_counter' 可能等於 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>89</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>92</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>繼續此迴圈 (假設 'o&lt;100')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此分支 (假設 '&lt;分支條件&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>21</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>用法</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>無法寫入 'num[1]' (可寫入的範圍為 0 到 0 之間)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+      <FILENAME>filemanager.cpp</FILENAME>
+      <LINE>77</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>從 'num' 讀取無效的資料:    可讀取的大小只有 'numOfArray*4' 個位元組，但可能會讀取多達 '8' 個位元組。</DESCRIPTION>
+    <FUNCTION>FileManager::getInt</FUNCTION>
+    <DECORATED>?getInt@FileManager@@QAEPAHH@Z</DECORATED>
+    <FUNCLINE>57</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>59</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>60</LINE>
+        <COLUMN>7</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>61</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>62</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'num' 是 1 元素的陣列 (4 個位元組)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>63</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>64</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>65</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'i&lt;fileLines')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'o&lt;100')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此分支 (假設 '&lt;分支條件&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'i&lt;length')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>78</LINE>
+        <COLUMN>22</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>33</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>離開此迴圈 ('i&lt;length' 為 false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>81</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>宣告</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'num_counter' 可能等於 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>89</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>92</LINE>
+        <COLUMN>26</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>28</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>67</LINE>
+        <COLUMN>20</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>繼續此迴圈 (假設 'o&lt;100')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>26</COLUMN>
+        <KEYEVENT>
+          <ID>9</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此分支 (假設 '&lt;分支條件&gt;')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>72</LINE>
+        <COLUMN>21</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>74</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>10</ID>
+          <KIND>分支</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>進入此迴圈 (假設 'i&lt;length')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\users\mikuhatsune\documents\visual studio 2015\projects\consoleapplication1\consoleapplication1\</FILEPATH>
+        <FILENAME>filemanager.cpp</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>11</ID>
+          <KIND>用法</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>無法從 'num[1]' 讀取 (可讀取的範圍為 0 到 0 之間)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
